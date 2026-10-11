@@ -11,6 +11,7 @@ const lirik = [
 // detik berakhirnya tiap baris (sesuai catatan lu)
 const akhir = [6, 10, 15, 23, 26, 33];
 const awal = [0, ...akhir.slice(0, -1)]; // 0, 6, 10, 15, 23, 26
+const geser = 1;
 
 const text = document.getElementById('text');
 const lagu = document.getElementById('lagu');
@@ -41,7 +42,8 @@ function tampilkan(idx) {
 }
 
 lagu.addEventListener('timeupdate', () => {
-  const t = lagu.currentTime;
+  const t = lagu.currentTime - geser;
+  if (t < 0) return;
   const idx = akhir.findIndex(batas => t < batas);
 
   // lewat detik 33: bersihin teks
