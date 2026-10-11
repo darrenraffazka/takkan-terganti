@@ -11,7 +11,7 @@ const lirik = [
 // detik berakhirnya tiap baris (sesuai catatan lu)
 const akhir = [6, 10, 15, 23, 26, 33];
 const awal = [0, ...akhir.slice(0, -1)]; // 0, 6, 10, 15, 23, 26
-const geser = 1;
+const geser = 1.5;
 
 const text = document.getElementById('text');
 const lagu = document.getElementById('lagu');
