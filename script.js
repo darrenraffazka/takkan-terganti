@@ -27,7 +27,7 @@ function tampilkan(idx) {
   text.textContent = '';
 
   const durasi = (akhir[idx] - awal[idx]) * 1000;
-  const kecepatan = (durasi * 0.7) / Math.max(lirik[idx].length, 1);
+  const kecepatan = (durasi * 0.85) / Math.max(lirik[idx].length, 1);
   let i = 0;
 
   function ketik() {
