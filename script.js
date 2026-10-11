@@ -1,4 +1,3 @@
-// TEMPEL 6 BARIS LIRIK DI SINI (satu baris = satu string)
 const lirik = [
   'Meski waktu datang dan berlalu sampai kau tiada bertahan', 
   'Semua tak kan mampu mengubahku',
@@ -8,7 +7,6 @@ const lirik = [
   'Kau tak akan terganti'
 ];
 
-// detik berakhirnya tiap baris (sesuai catatan lu)
 const akhir = [6, 10, 15, 23, 26, 33];
 const awal = [0, ...akhir.slice(0, -1)]; // 0, 6, 10, 15, 23, 26
 const geser = 1.5;
